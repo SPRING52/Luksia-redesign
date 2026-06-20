@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <script src="/javascript/main.js" defer></script>
+    <title>Luksia — Etusivu</title>
+  </head>
+  <body>
+    <header class="header" id="main-header">
+      <div class="nav-up flex justify-content-between align-center">
+        <a href="./index.html" class="logo-link">
+          <span class="logo">
+            <img src="/images/luksia-logo.png" alt="Luksia Logo" />
+          </span>
+        </a>
+
+        <nav class="nav flex" aria-label="Päänavigointi ylhäällä">
+          <ul class="nav-list flex justify-content-between align-center">
+            <li class="nav-item arrow">
+              <a href="./ammatit.html" class="big-link link-underline"
+                >Koulutus</a
+              >
+            </li>
+            <li class="line"></li>
+            <li class="nav-item">
+              <a
+                href="https://www.luksia.fi/ajankohtaista/"
+                class="link-underline"
+                >Ajankohtaista</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="search-bar flex align-center">
+          <input
+            type="text"
+            placeholder="Hae"
+            id="search-input"
+            aria-label="Hakukenttä"
+            autocomplete="off"
+          />
+          <button id="search-btn" class="search-glass" aria-label="Hae Painike">
+            <img src="/images/magnifying glass.png" alt="Suurennuslasi" />
+          </button>
+        </div>
+
+        <button
+          class="mobile-menu-toggle"
+          id="mobile-menu-toggle"
+          aria-label="Avaa valikko"
+          aria-expanded="false"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <div class="nav-down flex">
+        <nav class="nav" aria-label="Päänavigointi">
+          <ul class="flex" id="main-nav">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link active">Etusivu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="./opiskelijalle.html"
+                id="dropdown-toggle"
+                aria-expanded="false"
+                aria-controls="dropdown-menu"
+                >Opiskelijalle <span class="dropdown-icon">▼</span></a
+              >
+              <ul
+                class="menu dropdown-menu"
+                id="dropdown-menu"
+                aria-hidden="true"
+              >
+                <li class="menu-item">
+                  <a href="https://www.luksia.fi/opiskelijalle/digi-luksia/"
+                    >Digi-Luksia</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="https://www.luksia.fi/opiskelijalle/opinnot-luksiassa/"
+                    >Opinnot Luksiassa</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="https://www.luksia.fi/opiskelijalle/opiskelijaksi-luksiaan/"
+                    >Opiskelijaksi Luksiaan</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="./ammatit.html" class="nav-link">Koulutus</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main flex flex-column">
+      <div class="hero hero-img-index">
+        <div class="circle flex">
+          <div class="text flex flex-column">
+            <h1>Opiskele <br />ammatti.</h1>
+            <h2>Tule Luksiaan!</h2>
+          </div>
+        </div>
+        <div class="hero-content flex justify-content-between align-center">
+          <div class="hero-text-block flex flex-column">
+            <h2 class="hero-text main-hero-text">Uusi suunta syksyksi?</h2>
+            <h3 class="hero-text">Katso vapaat koulutuspaikat.</h3>
+          </div>
+          <div class="hero-link">
+            <a
+              href="https://www.luksia.fi/opiskelu-kannattaa-aina/"
+              class="hero-text ripple-effect"
+              >Tutustu aloihin ></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="article-block flex align-center justify-content-between fade-in-up"
+      >
+        <div class="article-text flex flex-column">
+          <h4>ammatitaidossa on tulevaisuus</h4>
+          <p>
+            Tulevaisuus rakennetaan vahvalla ammatillisella pohjalla. Luksia on
+            Länsi-Uudellamaalla toimiva ammatillinen koulu. Se tarjoaa
+            monipuolista koulutusta nuorille, aikuisille sekä työelämässä
+            toimiville.
+          </p>
+        </div>
+        <div class="article-img">
+          <img
+            src="/images/Ammattitaidossa on tulevaisuus.png"
+            alt="ammatitaidossa on tulevaisuus"
+          />
+        </div>
+      </div>
+
+      <div
+        class="article-block flex align-center justify-content-between fade-in-up"
+      >
+        <div class="article-img">
+          <img
+            src="/images/Avaa ovet ammatillisen koulutuksen maailmaan.png"
+            alt="Avaa ovet ammatillisen koulutuksen maailmaan"
+          />
+        </div>
+        <div class="article-text flex flex-column">
+          <h4>Avaa ovet ammatillisen koulutuksen maailmaan</h4>
+          <div class="text flex flex-column">
+            <p>
+              Me koulutamme sinut alan huippuosaajaksi tarjoamalla
+              käytännönläheistä opetusta, modernia teknologiaa ja
+              yhteistyömahdollisuuksia eri alojen yritysten kanssa.
+            </p>
+            <p>
+              Kehitä taitojasi, kasvata osaamistasi ja saavuta ammatillinen
+              tavoitteesi. Voit valita juuri sinulle sopivat kurssit ja
+              ohjelmat, jotka tukevat urasi kehitystä ja henkilökohtaista
+              kasvuasi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="motivation-block flex align-center justify-content-between fade-in-up"
+      >
+        <div class="motivation-text">
+          <p>
+            Hae koulutukseen helposti tutkinnon/koulutuksen esittelysivulta.
+            Löydät koulutuksen tarkemmat tiedot esittelysivun ePerusteet
+            -linkistä.
+          </p>
+          <a href="/sivut/ammatit.html" class="link-underline"
+            >Tutustu koulutuksiin</a
+          >
+        </div>
+        <div class="motivation-title-block">
+          <h4 class="motivation-title">Odotamme innolla yhteydenottoasi</h4>
+        </div>
+      </div>
+
+      <div class="cards flex justify-content-between">
+        <div class="card flex flex-column fade-in-up">
+          <div class="card-img">
+            <img
+              src="https://stadinao.hel.fi/wp-content/uploads/2023/06/stadinAO_media-ala_kullervonkatu_29092022_maija_astikainen.CR3-3572-Edit-scaled-1-1200x800.jpg"
+              alt="Opiskelijalle"
+            />
+          </div>
+          <div class="card-link">
+            <a href="./opiskelijalle.html">Opiskelijalle ></a>
+          </div>
+        </div>
+
+        <div class="card flex flex-column fade-in-up">
+          <div class="card-img">
+            <img src="/images/mikaonluksia.png" alt="Mikä on Luksia" />
+          </div>
+          <div class="card-link">
+            <a href="https://www.luksia.fi/luksia/">Mikä on Luksia? ></a>
+          </div>
+        </div>
+
+        <div class="card flex flex-column fade-in-up">
+          <div class="card-img">
+            <img src="/images/yhteistiedot.png" alt="Yhteistiedot" />
+          </div>
+          <div class="card-link">
+            <a href="https://www.luksia.fi/yhteystiedot/"
+              >Luksian yhteistiedot ></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts-block flex flex-column fade-in-up">
+        <h5>Ellet löydä etsimääsi, me autamme</h5>
+
+        <div class="contacts flex flex-column">
+          <h6>Koulutuksia koskevat asiat:</h6>
+          <div class="contact flex flex-column">
+            <a href="mailto:hakupalvelut@luksia.fi">hakupalvelut@luksia.fi</a>
+            <a href="tel:+358443696675">puh. 044 369 6675</a>
+          </div>
+        </div>
+
+        <div class="contacts flex flex-column">
+          <h6>Yleiset asiat:</h6>
+          <div class="contact flex flex-column">
+            <a href="mailto:info@luksia.fi">info@luksia.fi</a>
+            <a href="tel:+3581936961">puh. 019 369 61</a>
+          </div>
+        </div>
+
+        <div class="contacts flex flex-column">
+          <h6>Viralliset asiat:</h6>
+          <div class="contact flex flex-column">
+            <a href="mailto:kirjaamo@luksia.fi">kirjaamo@luksia.fi</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="welcome-link flex align-center justify-center ripple-effect fade-in-up"
+      >
+        <a href="https://www.luksia.fi/yhteystiedot/">Tervetuloa Luksiaan!</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="links flex flex-column">
+          <a href="#">Tietoa Luksiasta</a
+          ><a href="#">Asiakirjajulkisuuskuvaus</a
+          ><a href="#">Avoimet työpaikat</a><a href="#">Yhteystiedot</a>
+        </div>
+        <div class="links flex flex-column">
+          <a href="#">Koulutushaku</a><a href="#">Palaute</a
+          ><a href="#">Pyydä lisätietoa</a><a href="#">Vastuullisuus</a>
+        </div>
+        <div class="links flex flex-column">
+          <a href="#">AskeLuksia|Nuorten työpaja</a><a href="#">Evästeet</a
+          ><a href="#">Tietosuojaseloste</a><a href="#">Rekisteriseloste</a
+          ><a href="#">Saavutettavuusseloste</a>
+        </div>
+        <div class="links flex flex-column">
+          <a href="#">Facebook</a><a href="#">Instagram</a
+          ><a href="#">Linkedin</a><a href="#">TikTok</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Luksia, Länsi-Uudenmaan koulutuskuntayhtymä | Toivonkatu 4, 08100
+          Lohja | puh. 019 369 61 | Y0203167-9 | ©Luksia 2025
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="/css/ammatit.css" />
+    <script src="/javascript/main.js" defer></script>
+    <script src="/javascript/koulutushaku.js" defer></script>
+    <title>Yhteishaku, perustutkinnot</title>
+  </head>
+  <body>
+    <header class="header" id="main-header">
+      <div class="nav-up flex justify-content-between align-center">
+        <a href="./index.html" class="logo-link">
+          <span class="logo">
+            <img src="/images/luksia-logo.png" alt="Luksia Logo" />
+          </span>
+        </a>
+
+        <nav class="nav flex" aria-label="Päänavigointi ylhäällä">
+          <ul class="nav-list flex justify-content-between align-center">
+            <li class="nav-item arrow">
+              <a href="./ammatit.html" class="big-link link-underline"
+                >Koulutus</a
+              >
+            </li>
+            <li class="line"></li>
+            <li class="nav-item">
+              <a
+                href="https://www.luksia.fi/ajankohtaista/"
+                class="link-underline"
+                >Ajankohtaista</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="search-bar flex align-center">
+          <input
+            type="text"
+            placeholder="Hae"
+            id="search-input"
+            aria-label="Hakukenttä"
+            autocomplete="off"
+          />
+          <button id="search-btn" class="search-glass" aria-label="Hae Painike">
+            <img src="/images/magnifying glass.png" alt="Suurennuslasi" />
+          </button>
+        </div>
+
+        <button
+          class="mobile-menu-toggle"
+          id="mobile-menu-toggle"
+          aria-label="Avaa valikko"
+          aria-expanded="false"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <div class="nav-down flex">
+        <nav class="nav" aria-label="Päänavigointi">
+          <ul class="flex" id="main-nav">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Etusivu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="./opiskelijalle.html"
+                id="dropdown-toggle"
+                aria-expanded="false"
+                aria-controls="dropdown-menu"
+                >Opiskelijalle <span class="dropdown-icon">▼</span></a
+              >
+              <ul
+                class="menu dropdown-menu"
+                id="dropdown-menu"
+                aria-hidden="true"
+              >
+                <li class="menu-item">
+                  <a href="https://www.luksia.fi/opiskelijalle/digi-luksia/"
+                    >Digi-Luksia</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="https://www.luksia.fi/opiskelijalle/opinnot-luksiassa/"
+                    >Opinnot Luksiassa</a
+                  >
+                </li>
+                <li class="menu-item">
+                  <a
+                    href="https://www.luksia.fi/opiskelijalle/opiskelijaksi-luksiaan/"
+                    >Opiskelijaksi Luksiaan</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="./ammatit.html" class="nav-link active">Koulutus</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main flex flex-column">
+      <div class="hero hero-img-ammatit flex align-center">
+        <div class="hero-container flex align-center">
+          <div class="hero-link">
+            <a
+              href="https://www.luksia.fi/koulutus/amk-highway/"
+              class="hero-text ripple-effect"
+            >
+              <p>Luksiasta ammattikorkeaan</p>
+              <p>AMK-Highway ></p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="article-block flex align-center justify-content-between fade-in-up"
+      >
+        <div class="article-img">
+          <img
+            src="/images/Luksian koulutustarjonta.png"
+            alt="Luksian koulutustarjonta"
+          />
+        </div>
+
+        <div class="article-text flex flex-column">
+          <h4>Luksian koulutustarjonta</h4>
+          <div class="text flex flex-column">
+            <p>
+              Löydä uusia mahdollisuuksia matkallasi kohti unelma-ammattia. Tule
+              kehittymään kanssamme. Tarjoamme laajan valikoiman inspiroivia ja
+              käytännönläheisiä koulutuksia. Koulutukset ovat suunniteltu
+              vastaamaan nykyajan haasteita ja tulevaisuuden työelämän tarpeita.
+            </p>
+            <p>
+              Tutustu koulutuksiimme ja avaa ovi uuteen mahdollisuuteen ja
+              menestyksekkääseen tulevaisuuteen. Jos sinulla on jo alan
+              työpaikka, voit opiskella tutkinnon oppisopimuskoulutuksella
+              nykyisen työsi ohessa.
+            </p>
+            <p>
+              Yrityksille tarjoamme henkilöstön täydennyskoulutusta sekä
+              osaamisen kehittämistä. Ellet löydä yrityksellesi sopivaa
+              koulutusta, ota yhteyttä. Katsotaan, voimmeko räätälöidä juuri
+              sinun yrityksellesi sopivan koulutuksen.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-block flex flex-column fade-in-up">
+        <h4>Hae koulutuksia</h4>
+        <div class="text flex flex-column">
+          <p>
+            Voit tutustua Luksian koko koulutusohjelmatarjontaan aloittain tai
+            etsiä luettelon yksittäisistä tutkinnoista ja kursseista hieman
+            alempana tällä sivulla.
+          </p>
+          <p>
+            Jos et löydä etsimääsi, ota meihin yhteyttä. Haku- ja ohjauspalvelut
+            auttavat sinua. Sähköposti on
+            <a href="mailto: hakupalvelut@luksia.fi" class="bold">
+              hakupalvelut@luksia.fi</a
+            >. Jos haluat pikaisen vastauksen, soita numeroon
+            <a href="tel:+358403696675">044 369 6675</a>.
+          </p>
+          <p>
+            Luksian ammatilliset koulutukset ovat tarkoitettu ensisijaisesti
+            Suomessa asuville henkilöille. Jos koulutukseen hakee EU- tai
+            Schengen-maiden ulkopuolella asuva, hakijalla tulee olla työpaikka
+            Suomessa. <a
+              href="https://www.luksia.fi/koulutus/lukuvuosimaksut/"
+              class="link-underline bold"
+              >Lukuvuosimaksut kansainvälisille opiskelijoille ></a
+            >
+          </p>
+          <p>
+            Luksialla on tapauskohtaisesti oikeus varmistaa hakijan osaamisen
+            hankkimisen ja tutkinnonsuorittamisen edellytykset esimerkiksi
+            kielitestillä.
+          </p>
+        </div>
+      </div>
+
+      <section class="course-search-section fade-in-up">
+        <h4>Etsi koulutus</h4>
+
+        <!-- Filter Buttons Container -->
+        <div
+          class="filter-container"
+          id="filter-buttons"
+          role="group"
+          aria-label="Koulutuskategoriat"
+        >
+          <!-- Buttons will be dynamically generated by JavaScript -->
+        </div>
+
+        <!-- Courses Grid -->
+        <div class="courses-grid" id="courses-grid">
+          <!-- Course cards will be dynamically generated by JavaScript -->
+        </div>
+      </section>
+
+      <div class="line"></div>
+
+      <div class="article-block flex align-center">
+        <div class="article-img">
+          <img
+            src="/images/Opastusta, ohjeita ja neuvoja.png"
+            alt="Opastusta, ohjeita ja neuvoja"
+          />
+        </div>
+        <div class="article-text flex flex-column">
+          <h4>Opastusta, ohjeita ja neuvoja</h4>
+          <div class="text flex flex-column">
+            <p>
+              Luksian YouTube kanavalta löydät eri ammattialojen
+              esittelyvideoita.
+            </p>
+            <p>
+              Löydät myös ohjeita ja neuvoja esimerkiksi siihen, miten otat
+              opiskelupaikan vastaan.
+            </p>
+          </div>
+          <div
+            class="welcome-link flex align-center justify-center ripple-effect fade-in-up"
+          >
+            <a
+              href="https://www.youtube.com/playlist?list=PLKHHYJkNYq7xCilTMCTQapVsbq2fqJBCX"
+              >Tutustu kanavaan</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="links flex flex-column">
+          <a href="#">Tietoa Luksiasta</a
+          ><a href="#">Asiakirjajulkisuuskuvaus</a
+          ><a href="#">Avoimet työpaikat</a><a href="#">Yhteystiedot</a>
+        </div>
+        <div class="links flex flex-column">
+          <a href="#">Koulutushaku</a><a href="#">Palaute</a
+          ><a href="#">Pyydä lisätietoa</a><a href="#">Vastuullisuus</a>
+        </div>
+        <div class="links flex flex-column">
+          <a href="#">AskeLuksia|Nuorten työpaja</a><a href="#">Evästeet</a
+          ><a href="#">Tietosuojaseloste</a><a href="#">Rekisteriseloste</a
+          ><a href="#">Saavutettavuusseloste</a>
+        </div>
+        <div class="links flex flex-column">
+          <a href="#">Facebook</a><a href="#">Instagram</a
+          ><a href="#">Linkedin</a><a href="#">TikTok</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Luksia, Länsi-Uudenmaan koulutuskuntayhtymä | Toivonkatu 4, 08100
+          Lohja | puh. 019 369 61 | Y0203167-9 | ©Luksia 2025
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

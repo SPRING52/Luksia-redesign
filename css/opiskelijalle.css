@@ -1,0 +1,40 @@
+.article-block {
+  gap: var(--spacing-sm);
+}
+
+.article-block h1 {
+  font-size: var(--font-size-3xl);
+}
+
+.article-block .text {
+  font-size: var(--font-size-md);
+  gap: var(--spacing-sm);
+}
+
+.card-title {
+  font-size: var(--font-size-md);
+}
+
+.card-text {
+  font-size: var(--font-size-md);
+}
+
+.card-link {
+  gap: var(--spacing-md);
+}
+
+.motivation-text {
+  display: flex;
+  font-size: var(--font-size-xl);
+  gap: var(--spacing-md);
+}
+
+/* Mobile Large: 481px - 768px */
+@media (max-width: 768px) {
+  .welcome-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+}
