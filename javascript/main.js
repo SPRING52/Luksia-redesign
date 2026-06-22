@@ -52,11 +52,6 @@
   if (dropdownToggle && dropdownMenu) {
     // Для мобильных и планшетов (≤1024px) - клик для открытия dropdown
     if (window.innerWidth <= 1024) {
-      dropdownToggle.addEventListener("click", (e) => {
-        e.preventDefault();
-        const isHidden = dropdownMenu.getAttribute("aria-hidden") === "true";
-        dropdownMenu.setAttribute("aria-hidden", !isHidden);
-      });
     } else {
       // Hover для desktop (>1024px)
       const dropdownParent = dropdownToggle.closest(".dropdown");
