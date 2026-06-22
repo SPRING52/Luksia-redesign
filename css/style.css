@@ -51,12 +51,12 @@
   --radius-full: 50%;
 
   /* Touch Target Size (Accessibility) */
-  --touch-target-min: 2.75rem; /* 44px - WCAG минимум */
+  --touch-target-min: 2.75rem; /* 44px - WCAG minimum */
 }
 
 /* Reset & Base Styles */
 html {
-  font-size: 16px; /* Base для rem единиц */
+  font-size: 16px; /* Base for rem units */
 }
 
 * {
@@ -919,7 +919,7 @@ a.hero-text {
     height: 60px;
   }
 
-  /* Скрываем десктопную навигацию на планшетах */
+  /* Hide desktop navigation on tablets */
   .nav-up .nav {
     display: none;
   }
@@ -928,12 +928,12 @@ a.hero-text {
     display: none;
   }
 
-  /* Показываем бургер-меню на планшетах */
+  /* Show burger menu on tablets */
   .mobile-menu-toggle {
     display: flex;
   }
 
-  /* Мобильное выдвижное меню для планшетов */
+  /* Mobile sliding menu for tablets */
   .nav-down {
     position: fixed;
     top: 80px;

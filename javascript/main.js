@@ -1,4 +1,4 @@
-// Main JavaScript - Объединенный модуль всех интерактивных функций
+// Main JavaScript - Combined module for all interactive functions
 (function () {
   "use strict";
 
@@ -12,7 +12,7 @@
   const dropdownToggle = document.getElementById("dropdown-toggle");
   const dropdownMenu = document.getElementById("dropdown-menu");
 
-  // Sticky header с тенью при скролле
+  // Sticky header with shadow on scroll
   let lastScroll = 0;
 
   function handleScroll() {
@@ -29,7 +29,7 @@
 
   window.addEventListener("scroll", handleScroll);
 
-  // Мобильное меню toggle
+  // Mobile menu toggle
   function toggleMobileMenu() {
     const isActive = mobileMenuToggle.classList.toggle("active");
     navDown.classList.toggle("active");
@@ -48,9 +48,9 @@
     mobileMenuToggle.addEventListener("click", toggleMobileMenu);
   }
 
-  // Dropdown меню
+  // Dropdown menu
   if (dropdownToggle && dropdownMenu) {
-    // Закрытие при клике вне меню (только для desktop)
+    // Close on outside click (desktop only)
     document.addEventListener("click", (e) => {
       if (
         window.innerWidth > 1024 &&
@@ -62,7 +62,7 @@
     });
   }
 
-  // Адаптация при изменении размера окна
+  // Adaptation on window resize
   let resizeTimeout;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimeout);
@@ -76,7 +76,7 @@
     }, 250);
   });
 
-  // Smooth scroll для якорных ссылок
+  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       const href = this.getAttribute("href");
@@ -93,7 +93,7 @@
     });
   });
 
-  // Accessibility: focus trap в мобильном меню
+  // Accessibility: focus trap in mobile menu
   function trapFocus(element) {
     const focusableElements = element.querySelectorAll(
       "a[href], button:not([disabled]), textarea, input, select",
@@ -159,7 +159,7 @@
 
   const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-  // Элементы для анимации
+  // Elements for animation
   const animatedElements = document.querySelectorAll(
     ".article-block, .card, .contacts-block, .motivation-block, .welcome-link, .course-search-section",
   );
@@ -168,7 +168,7 @@
     observer.observe(element);
   });
 
-  // Stagger effect для карточек
+  // Stagger effect for cards
   const cards = document.querySelectorAll(".card");
   cards.forEach((card, index) => {
     card.style.transitionDelay = `${index * 0.15}s`;
@@ -213,7 +213,7 @@
   const circle = document.querySelector(".circle");
 
   if (hero && circle) {
-    // CSS анимации
+    // CSS animations
     const style = document.createElement("style");
     style.textContent = `
       @keyframes fadeInScale {
@@ -280,7 +280,7 @@
     }, 600);
   }
 
-  // Применяем эффект к элементам с классом ripple-effect и кнопкам
+  // Apply effect to elements with ripple-effect class and buttons
   const rippleElements = document.querySelectorAll(
     ".ripple-effect, .welcome-link, .search-glass",
   );
@@ -293,10 +293,10 @@
   // CARD HOVER EFFECTS (3D Tilt)
   // ============================================
 
-  // Отключаем 3D эффект на мобильных и планшетах
+  // Disable 3D effect on mobile and tablets
   if (window.innerWidth > 1024) {
     cards.forEach((card) => {
-      // 3D tilt эффект при движении мыши
+      // 3D tilt effect on mouse move
       card.addEventListener("mousemove", (e) => {
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
@@ -311,12 +311,12 @@
         card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
       });
 
-      // Возврат в исходное состояние
+      // Return to original state
       card.addEventListener("mouseleave", () => {
         card.style.transform = "";
       });
 
-      // Плавность
+      // Smoothness
       card.style.transition =
         "transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1)";
     });
