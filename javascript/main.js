@@ -52,6 +52,25 @@
   if (dropdownToggle && dropdownMenu) {
     // Для мобильных и планшетов (≤1024px) - клик для открытия dropdown
     if (window.innerWidth <= 1024) {
+      dropdownToggle.addEventListener("click", (e) => {
+        const isHidden = dropdownMenu.getAttribute("aria-hidden") === "true";
+
+        // Если dropdown закрыт - открываем его
+        if (isHidden) {
+          e.preventDefault();
+          dropdownMenu.setAttribute("aria-hidden", "false");
+          dropdownToggle.setAttribute("aria-expanded", "true");
+        }
+        // Если dropdown уже открыт - позволяем переход по ссылке
+      });
+
+      // Закрываем dropdown при клике вне его
+      document.addEventListener("click", (e) => {
+        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+          dropdownMenu.setAttribute("aria-hidden", "true");
+          dropdownToggle.setAttribute("aria-expanded", "false");
+        }
+      });
     } else {
       // Hover для desktop (>1024px)
       const dropdownParent = dropdownToggle.closest(".dropdown");
