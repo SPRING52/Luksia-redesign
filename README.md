@@ -14,7 +14,7 @@ Projekti sisältää kolme pääsivua:
 
 1. **Etusivu** (Sivuston pääsivu)
 2. **Koulutushaku** (Koulutusohjelmien haku ja tarkastelu)
-3. **Uudelle opiskelijalle** (Tietoa ja ohjeita uusille opiskelijoille)
+3. **Opiskelijalle** (Tietoa ja ohjeita opiskelijoille)
 
 Pääpaino oli seuraavissa osa-alueissa:
 
@@ -81,7 +81,7 @@ Koulutusohjelmien hakusivu. Sisältää interaktiivisen koulutusalojen suodatusj
 
 #### opiskelijalle.html
 
-Uusien opiskelijoiden sivu. Sisältää hyödyllistä tietoa, linkkejä ja suosituksia opintojen aloittamiseen.
+Opiskelijoiden sivu. Sisältää hyödyllistä tietoa, linkkejä ja suosituksia opintojen aloittamiseen.
 
 ---
 
@@ -113,7 +113,7 @@ Sisältää:
 
 #### opiskelijalle.css
 
-Uusien opiskelijoiden sivun lisätyylit.
+Opiskelijoiden sivun lisätyylit.
 
 ---
 
