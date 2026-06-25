@@ -41,7 +41,7 @@ Ulkoisia kirjastoja tai viitekehyksiä (kuten Bootstrap, React, Vue jne.) ei ole
 # 2. TIEDOSTORAKENNE
 
 ## Projektin kansiorakenne
-
+```
 Luksia-redesign/
 │
 ├── index.html
@@ -66,7 +66,7 @@ Luksia-redesign/
     ├── ammatit.html
     ├── opiskelijalle.html
     └── favicon.ico
-
+```
 ## Tiedostojen tarkoitus
 
 ### HTML
