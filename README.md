@@ -1,8 +1,3 @@
-Вот полный перевод твоего файла технической документации (`README.md`) на финский язык. Текст адаптирован под стандарты финского профессионального ИТ-образования (Ammatillinen koulutus), использует точные термины (*saavutettavuus, responsiivisuus, dynaaminen luonti* и др.) и полностью готов для добавления в твой проект.
-
----
-
-```markdown
 # TEKNINEN DOKUMENTAATIO
 
 ## Luksia-verkkosivuston uudelleensuunnittelu (Frontend-projekti)
@@ -47,7 +42,6 @@ Ulkoisia kirjastoja tai viitekehyksiä (kuten Bootstrap, React, Vue jne.) ei ole
 
 ## Projektin kansiorakenne
 
-```text
 Luksia-redesign/
 │
 ├── index.html
@@ -72,8 +66,6 @@ Luksia-redesign/
     ├── ammatit.html
     ├── opiskelijalle.html
     └── favicon.ico
-
-```
 
 ## Tiedostojen tarkoitus
 
